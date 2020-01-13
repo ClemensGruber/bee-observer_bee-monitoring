@@ -1043,6 +1043,7 @@ void loop () {
     #endif
     #ifdef isWifiESP32
       esp_sleep_enable_timer_wakeup(sleepTime);
+      esp_deep_sleep_start();
     #endif 
 //    delay(sleepTime);  // sleep for 10 s
 //    Serial.println(millis());
